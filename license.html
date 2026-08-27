@@ -1,0 +1,538 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>Open Source Licenses - KSR Apps</title>
+<style>
+    :root { --bg:#f7f7f8; --card:#fff; --text:#1f2937; --muted:#6b7280; --line:#e5e7eb; --accent:#2563eb; --warn-bg:#fff7ed; --warn-line:#fed7aa; --warn-text:#9a3412; }
+    * { box-sizing:border-box; }
+    body { margin:0; font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Noto Sans KR","Apple SD Gothic Neo","Malgun Gothic",sans-serif; background:var(--bg); color:var(--text); line-height:1.62; }
+    main { max-width:1100px; margin:0 auto; padding:32px 18px 64px; }
+    h1 { margin:0 0 8px; font-size:2rem; letter-spacing:-0.02em; }
+    h2 { margin:34px 0 14px; font-size:1.35rem; border-bottom:1px solid var(--line); padding-bottom:8px; }
+    h3 { margin:0 0 6px; font-size:1.08rem; }
+    p { margin:8px 0; }
+    a { color:var(--accent); text-decoration:none; overflow-wrap:anywhere; }
+    a:hover { text-decoration:underline; }
+    .note,.warning { border-radius:14px; padding:14px 16px; margin:12px 0; }
+    .note { background:var(--card); border:1px solid var(--line); color:var(--muted); }
+    .warning { background:var(--warn-bg); border:1px solid var(--warn-line); color:var(--warn-text); }
+    .summary { width:100%; border-collapse:collapse; background:var(--card); border:1px solid var(--line); border-radius:14px; overflow:hidden; display:block; overflow-x:auto; }
+    .summary th,.summary td { border-bottom:1px solid var(--line); padding:10px 12px; vertical-align:top; text-align:left; white-space:nowrap; }
+    .summary th { background:#f3f4f6; font-weight:700; }
+    .summary tr:last-child td { border-bottom:none; }
+    .section-list { display:grid; grid-template-columns:1fr; gap:12px; }
+    .item { background:var(--card); border:1px solid var(--line); border-radius:14px; padding:16px; }
+    .meta { display:grid; grid-template-columns:140px 1fr; gap:6px 12px; margin-top:10px; }
+    .label { color:var(--muted); font-weight:600; }
+    .license-text { margin-top:10px; padding-top:10px; border-top:1px dashed var(--line); }
+    .footer { margin-top:40px; font-size:.92rem; color:var(--muted); }
+    code { background:#f3f4f6; padding:2px 5px; border-radius:6px; }
+    @media (max-width:640px) { h1{font-size:1.6rem;} .meta{grid-template-columns:1fr; gap:2px;} .label{margin-top:8px;} }
+</style>
+</head>
+<body>
+<main>
+<header>
+<h1>Open Source Licenses</h1>
+
+</header>
+
+
+<h2>License Summary</h2>
+<table aria-label="Open source license summary" class="summary">
+<thead><tr><th>Component</th><th>License</th><th>License Text</th></tr></thead>
+<tbody>
+<tr><td>FFmpeg</td><td>LGPL-2.1-or-later by default; GPL if GPL parts/options are enabled</td><td><a href="https://www.ffmpeg.org/legal.html">License / notice</a></td></tr>
+<tr><td>LAME</td><td>LGPL</td><td><a href="https://lame.sourceforge.io/license.txt">License / notice</a></td></tr>
+<tr><td>UVR_MDX-NET-Inst_HQ_5</td><td>MIT License, per Ultimate Vocal Remover project notice</td><td><a href="https://github.com/Anjok07/ultimatevocalremovergui">License / notice</a></td></tr>
+<tr><td>ONNX Runtime</td><td>MIT License</td><td><a href="https://github.com/microsoft/onnxruntime/blob/main/LICENSE">License / notice</a></td></tr>
+<tr><td>KISS FFT</td><td>BSD-3-Clause</td><td><a href="https://github.com/mborgerding/kissfft/blob/master/LICENSES/BSD-3-Clause">License / notice</a></td></tr>
+<tr><td>Oboe</td><td>Apache License 2.0</td><td><a href="https://github.com/google/oboe/blob/main/LICENSE">License / notice</a></td></tr>
+<tr><td>fft2d / Ooura FFT</td><td>Ooura permissive license</td><td><a href="https://github.com/headupinclouds/fft2d/blob/master/LICENSE">License / notice</a></td></tr>
+<tr><td>signalsmith-stretch</td><td>MIT License</td><td><a href="https://github.com/Signalsmith-Audio/signalsmith-stretch/blob/main/LICENSE.txt">License / notice</a></td></tr>
+<tr><td>Protocol Buffers Lite / protobuf-javalite</td><td>BSD-3-Clause</td><td><a href="https://github.com/protocolbuffers/protobuf/blob/main/LICENSE">License / notice</a></td></tr>
+<tr><td>libssh</td><td>GNU Library/Lesser General Public License</td><td><a href="https://www.libssh.org/features/">License / notice</a></td></tr>
+<tr><td>OpenSSL</td><td>Apache License 2.0 for OpenSSL 3.x and later; older OpenSSL/SSLeay licenses for 1.1.1 and earlier</td><td><a href="https://openssl-library.org/source/license/">License / notice</a></td></tr>
+<tr><td>AndroidX Core KTX</td><td>Apache License 2.0</td><td><a href="https://github.com/androidx/androidx/blob/androidx-main/LICENSE.txt">License / notice</a></td></tr>
+<tr><td>AndroidX AppCompat</td><td>Apache License 2.0</td><td><a href="https://github.com/androidx/androidx/blob/androidx-main/LICENSE.txt">License / notice</a></td></tr>
+<tr><td>AndroidX Activity Compose</td><td>Apache License 2.0</td><td><a href="https://github.com/androidx/androidx/blob/androidx-main/LICENSE.txt">License / notice</a></td></tr>
+<tr><td>AndroidX Compose BOM / Runtime / UI / Material3 / Tooling</td><td>Apache License 2.0</td><td><a href="https://github.com/androidx/androidx/blob/androidx-main/LICENSE.txt">License / notice</a></td></tr>
+<tr><td>AndroidX Lifecycle Runtime KTX / ViewModel KTX</td><td>Apache License 2.0</td><td><a href="https://github.com/androidx/androidx/blob/androidx-main/LICENSE.txt">License / notice</a></td></tr>
+<tr><td>AndroidX Navigation</td><td>Apache License 2.0</td><td><a href="https://github.com/androidx/androidx/blob/androidx-main/LICENSE.txt">License / notice</a></td></tr>
+<tr><td>AndroidX RecyclerView</td><td>Apache License 2.0</td><td><a href="https://github.com/androidx/androidx/blob/androidx-main/LICENSE.txt">License / notice</a></td></tr>
+<tr><td>AndroidX Paging Runtime</td><td>Apache License 2.0</td><td><a href="https://github.com/androidx/androidx/blob/androidx-main/LICENSE.txt">License / notice</a></td></tr>
+<tr><td>AndroidX Multidex</td><td>Apache License 2.0</td><td><a href="https://github.com/androidx/androidx/blob/androidx-main/LICENSE.txt">License / notice</a></td></tr>
+<tr><td>AndroidX SwipeRefreshLayout</td><td>Apache License 2.0</td><td><a href="https://github.com/androidx/androidx/blob/androidx-main/LICENSE.txt">License / notice</a></td></tr>
+<tr><td>AndroidX CoordinatorLayout</td><td>Apache License 2.0</td><td><a href="https://github.com/androidx/androidx/blob/androidx-main/LICENSE.txt">License / notice</a></td></tr>
+<tr><td>AndroidX Media</td><td>Apache License 2.0</td><td><a href="https://github.com/androidx/media/blob/release/LICENSE.txt">License / notice</a></td></tr>
+<tr><td>AndroidX Test Ext JUnit / Espresso Core</td><td>Apache License 2.0</td><td><a href="https://github.com/androidx/androidx/blob/androidx-main/LICENSE.txt">License / notice</a></td></tr>
+<tr><td>Kotlin / Kotlin Gradle Plugin</td><td>Apache License 2.0</td><td><a href="https://github.com/JetBrains/kotlin/blob/master/license/LICENSE.txt">License / notice</a></td></tr>
+<tr><td>Android Gradle Plugin</td><td>Apache License 2.0</td><td><a href="https://android.googlesource.com/platform/tools/base/+/refs/heads/mirror-goog-studio-main/LICENSE">License / notice</a></td></tr>
+<tr><td>Gson</td><td>Apache License 2.0</td><td><a href="https://github.com/google/gson/blob/main/LICENSE">License / notice</a></td></tr>
+<tr><td>Logger / orhanobut/logger</td><td>Apache License 2.0</td><td><a href="https://github.com/orhanobut/logger/blob/master/LICENSE">License / notice</a></td></tr>
+<tr><td>RxJava 3</td><td>Apache License 2.0</td><td><a href="https://github.com/ReactiveX/RxJava/blob/master/LICENSE">License / notice</a></td></tr>
+<tr><td>RxAndroid</td><td>Apache License 2.0</td><td><a href="https://github.com/ReactiveX/RxAndroid/blob/3.x/LICENSE">License / notice</a></td></tr>
+<tr><td>JSch</td><td>BSD-style license</td><td><a href="https://github.com/is/jsch/blob/master/LICENSE.txt">License / notice</a></td></tr>
+<tr><td>Apache Commons Net</td><td>Apache License 2.0</td><td><a href="https://github.com/apache/commons-net/blob/master/LICENSE.txt">License / notice</a></td></tr>
+<tr><td>jcifs-ng</td><td>LGPL-2.1</td><td><a href="https://github.com/AgNO3/jcifs-ng/blob/master/LICENSE">License / notice</a></td></tr>
+<tr><td>libsmb2</td><td>LGPL-2.1-or-later (core SMB2/3 client library); BSD-2-Clause for libdcerpc and examples</td><td><a href="https://github.com/sahlberg/libsmb2/blob/master/COPYING">License / notice</a></td></tr>
+<tr><td>SSHJ</td><td>Apache License 2.0</td><td><a href="https://github.com/hierynomus/sshj/blob/master/LICENSE_HEADER">License / notice</a></td></tr>
+<tr><td>Firebase Protolite Well Known Types</td><td>Apache License 2.0</td><td><a href="https://www.apache.org/licenses/LICENSE-2.0">License / notice</a></td></tr>
+<tr><td>JUnit 4</td><td>Eclipse Public License 1.0</td><td><a href="https://github.com/junit-team/junit4/blob/main/LICENSE-junit.txt">License / notice</a></td></tr>
+<tr><td>Material Components for Android</td><td>Apache License 2.0</td><td><a href="https://github.com/material-components/material-components-android/blob/master/LICENSE">License / notice</a></td></tr>
+<tr><td>Speed Dial / FloatingActionButtonSpeedDial</td><td>Apache License 2.0</td><td><a href="https://github.com/leinardi/FloatingActionButtonSpeedDial/blob/release/LICENSE">License / notice</a></td></tr>
+<tr><td>FastAdapter</td><td>Apache License 2.0</td><td><a href="https://github.com/mikepenz/FastAdapter/blob/develop/LICENSE">License / notice</a></td></tr>
+<tr><td>MaterialDrawer</td><td>Apache License 2.0</td><td><a href="https://github.com/mikepenz/MaterialDrawer/blob/develop/LICENSE">License / notice</a></td></tr>
+<tr><td>Material Dialogs</td><td>Apache License 2.0</td><td><a href="https://github.com/afollestad/material-dialogs/blob/main/LICENSE.md">License / notice</a></td></tr>
+
+</tbody>
+</table>
+<h2>Native / Audio / AI Components</h2>
+<div class="section-list">
+<section class="item">
+<h3>FFmpeg</h3>
+<p>Multimedia framework used for decoding, encoding, filtering, and media processing.</p>
+<div class="meta">
+<div class="label">License</div><div>LGPL-2.1-or-later by default; GPL if GPL parts/options are enabled</div>
+<div class="label">Project</div><div><a href="https://ffmpeg.org">https://ffmpeg.org</a></div>
+<div class="label">License body</div><div><a href="https://www.ffmpeg.org/legal.html">https://www.ffmpeg.org/legal.html</a></div>
+</div>
+<div class="license-text"><p><strong>Notice:</strong> FFmpeg license obligations depend on the actual build configuration. If GPL components or --enable-gpl are used, GPL terms may apply to FFmpeg as a whole. If --enable-nonfree is used, redistribution may be restricted.</p></div>
+</section>
+<section class="item">
+<h3>LAME</h3>
+<p>MP3 encoder library.</p>
+<div class="meta">
+<div class="label">License</div><div>LGPL</div>
+<div class="label">Project</div><div><a href="https://lame.sourceforge.io">https://lame.sourceforge.io</a></div>
+<div class="label">License body</div><div><a href="https://lame.sourceforge.io/license.txt">https://lame.sourceforge.io/license.txt</a></div>
+</div>
+<div class="license-text"><p><strong>Notice:</strong> LAME is used for MP3 encoding support and is distributed under LGPL terms.</p></div>
+</section>
+<section class="item">
+<h3>UVR_MDX-NET-Inst_HQ_5</h3>
+<p>UVR / MDX-Net based model used for vocal and instrumental separation.</p>
+<div class="meta">
+<div class="label">License</div><div>MIT License, per Ultimate Vocal Remover project notice</div>
+<div class="label">Project</div><div><a href="https://github.com/Anjok07/ultimatevocalremovergui">https://github.com/Anjok07/ultimatevocalremovergui</a></div>
+<div class="label">License body</div><div><a href="https://github.com/Anjok07/ultimatevocalremovergui">https://github.com/Anjok07/ultimatevocalremovergui</a></div>
+</div>
+<div class="license-text"><p><strong>Notice:</strong> This application uses a UVR / MDX-Net based model. According to the Ultimate Vocal Remover project notice, third-party application developers who wish to use UVR models should honor the MIT license by providing credit to UVR and its developers. Credit is provided to Ultimate Vocal Remover, Anjok07, and the UVR development community.</p></div>
+</section>
+<section class="item">
+<h3>ONNX Runtime</h3>
+<p>Machine learning inference runtime used to run ONNX models.</p>
+<div class="meta">
+<div class="label">License</div><div>MIT License</div>
+<div class="label">Project</div><div><a href="https://onnxruntime.ai">https://onnxruntime.ai</a></div>
+<div class="label">License body</div><div><a href="https://github.com/microsoft/onnxruntime/blob/main/LICENSE">https://github.com/microsoft/onnxruntime/blob/main/LICENSE</a></div>
+</div>
+<div class="license-text"><p><strong>Notice:</strong> Copyright (c) Microsoft Corporation.</p></div>
+</section>
+<section class="item">
+<h3>KISS FFT</h3>
+<p>Fast Fourier Transform library.</p>
+<div class="meta">
+<div class="label">License</div><div>BSD-3-Clause</div>
+<div class="label">Project</div><div><a href="https://github.com/mborgerding/kissfft">https://github.com/mborgerding/kissfft</a></div>
+<div class="label">License body</div><div><a href="https://github.com/mborgerding/kissfft/blob/master/LICENSES/BSD-3-Clause">https://github.com/mborgerding/kissfft/blob/master/LICENSES/BSD-3-Clause</a></div>
+</div>
+<div class="license-text"><p><strong>Notice:</strong> Copyright (c) Mark Borgerding and contributors.</p></div>
+</section>
+<section class="item">
+<h3>Oboe</h3>
+<p>C++ library for high-performance audio apps on Android.</p>
+<div class="meta">
+<div class="label">License</div><div>Apache License 2.0</div>
+<div class="label">Project</div><div><a href="https://github.com/google/oboe">https://github.com/google/oboe</a></div>
+<div class="label">License body</div><div><a href="https://github.com/google/oboe/blob/main/LICENSE">https://github.com/google/oboe/blob/main/LICENSE</a></div>
+</div>
+<div class="license-text"><p><strong>Notice:</strong> Copyright 2016 The Android Open Source Project.</p></div>
+</section>
+<section class="item">
+<h3>fft2d / Ooura FFT</h3>
+<p>FFT implementation derived from Ooura FFT.</p>
+<div class="meta">
+<div class="label">License</div><div>Ooura permissive license</div>
+<div class="label">Project</div><div><a href="https://github.com/headupinclouds/fft2d">https://github.com/headupinclouds/fft2d</a></div>
+<div class="label">License body</div><div><a href="https://github.com/headupinclouds/fft2d/blob/master/LICENSE">https://github.com/headupinclouds/fft2d/blob/master/LICENSE</a></div>
+</div>
+<div class="license-text"><p><strong>Notice:</strong> Ooura FFT permits use, copy, modification, and distribution for any purpose, including commercial use, without fee. The original notice asks users to refer to the package when modifying the code.</p></div>
+</section>
+<section class="item">
+<h3>signalsmith-stretch</h3>
+<p>Audio time-stretching and pitch-shifting library.</p>
+<div class="meta">
+<div class="label">License</div><div>MIT License</div>
+<div class="label">Project</div><div><a href="https://signalsmith-audio.co.uk/code/stretch/">https://signalsmith-audio.co.uk/code/stretch/</a></div>
+<div class="label">License body</div><div><a href="https://github.com/Signalsmith-Audio/signalsmith-stretch/blob/main/LICENSE.txt">https://github.com/Signalsmith-Audio/signalsmith-stretch/blob/main/LICENSE.txt</a></div>
+</div>
+<div class="license-text"><p><strong>Notice:</strong> Copyright Signalsmith Audio and contributors.</p></div>
+</section>
+<section class="item">
+<h3>Protocol Buffers Lite / protobuf-javalite</h3>
+<p>Protocol Buffers Lite runtime used for compact Android/mobile protobuf support.</p>
+<div class="meta">
+<div class="label">License</div><div>BSD-3-Clause</div>
+<div class="label">Project</div><div><a href="https://github.com/protocolbuffers/protobuf">https://github.com/protocolbuffers/protobuf</a></div>
+<div class="label">License body</div><div><a href="https://github.com/protocolbuffers/protobuf/blob/main/LICENSE">https://github.com/protocolbuffers/protobuf/blob/main/LICENSE</a></div>
+</div>
+<div class="license-text"><p><strong>Notice:</strong> Copyright 2008 Google Inc.</p></div>
+</section>
+<section class="item">
+<h3>libssh</h3>
+<p>Client-side SSH library used for SSH/SFTP related functionality.</p>
+<div class="meta">
+<div class="label">License</div><div>GNU Library/Lesser General Public License</div>
+<div class="label">Project</div><div><a href="https://www.libssh.org">https://www.libssh.org</a></div>
+<div class="label">License body</div><div><a href="https://www.libssh.org/features/">https://www.libssh.org/features/</a></div>
+</div>
+<div class="license-text"><p><strong>Notice:</strong> libssh is licensed under the GNU Library/Lesser General Public License. For proprietary applications, comply with LGPL obligations such as preserving notices and allowing relinking where required.</p></div>
+</section>
+<section class="item">
+<h3>libsmb2</h3>
+<p>High-performance userspace SMB2/SMB3 client library used to access network shares.</p>
+<div class="meta">
+<div class="label">License</div><div>LGPL-2.1-or-later for the core libsmb2 client library; BSD-2-Clause for libdcerpc and example applications</div>
+<div class="label">Project</div><div><a href="https://github.com/sahlberg/libsmb2">https://github.com/sahlberg/libsmb2</a></div>
+<div class="label">License body</div><div><a href="https://github.com/sahlberg/libsmb2/blob/master/COPYING">https://github.com/sahlberg/libsmb2/blob/master/COPYING</a></div>
+</div>
+<div class="license-text"><p><strong>Notice:</strong> The core SMB2/SMB3 client library and its non-DCE/RPC public headers are licensed under LGPL-2.1-or-later. The separate libdcerpc library, DCE/RPC headers, and example applications are licensed under the BSD 2-Clause License. For proprietary applications, preserve notices and comply with applicable LGPL requirements.</p></div>
+</section>
+<section class="item">
+<h3>OpenSSL</h3>
+<p>Cryptography and TLS library.</p>
+<div class="meta">
+<div class="label">License</div><div>Apache License 2.0 for OpenSSL 3.x and later; older OpenSSL/SSLeay licenses for 1.1.1 and earlier</div>
+<div class="label">Project</div><div><a href="https://www.openssl.org">https://www.openssl.org</a></div>
+<div class="label">License body</div><div><a href="https://openssl-library.org/source/license/">https://openssl-library.org/source/license/</a></div>
+</div>
+<div class="license-text"><p><strong>Notice:</strong> OpenSSL license notice must match the actual OpenSSL version included in the application.</p></div>
+</section>
+</div>
+<h2>AndroidX / Jetpack / Compose Components</h2>
+<div class="section-list">
+<section class="item">
+<h3>AndroidX Core KTX</h3>
+<p>Kotlin extensions for Android framework APIs.</p>
+<div class="meta">
+<div class="label">License</div><div>Apache License 2.0</div>
+<div class="label">Project</div><div><a href="https://developer.android.com/jetpack/androidx">https://developer.android.com/jetpack/androidx</a></div>
+<div class="label">License body</div><div><a href="https://github.com/androidx/androidx/blob/androidx-main/LICENSE.txt">https://github.com/androidx/androidx/blob/androidx-main/LICENSE.txt</a></div>
+</div>
+<div class="license-text"><p><strong>Notice:</strong> Part of AndroidX / Jetpack.</p></div>
+</section>
+<section class="item">
+<h3>AndroidX AppCompat</h3>
+<p>Backward-compatible Android app support library.</p>
+<div class="meta">
+<div class="label">License</div><div>Apache License 2.0</div>
+<div class="label">Project</div><div><a href="https://developer.android.com/jetpack/androidx/releases/appcompat">https://developer.android.com/jetpack/androidx/releases/appcompat</a></div>
+<div class="label">License body</div><div><a href="https://github.com/androidx/androidx/blob/androidx-main/LICENSE.txt">https://github.com/androidx/androidx/blob/androidx-main/LICENSE.txt</a></div>
+</div>
+<div class="license-text"><p><strong>Notice:</strong> Part of AndroidX / Jetpack.</p></div>
+</section>
+<section class="item">
+<h3>AndroidX Activity Compose</h3>
+<p>Activity integration APIs for Jetpack Compose.</p>
+<div class="meta">
+<div class="label">License</div><div>Apache License 2.0</div>
+<div class="label">Project</div><div><a href="https://developer.android.com/jetpack/androidx/releases/activity">https://developer.android.com/jetpack/androidx/releases/activity</a></div>
+<div class="label">License body</div><div><a href="https://github.com/androidx/androidx/blob/androidx-main/LICENSE.txt">https://github.com/androidx/androidx/blob/androidx-main/LICENSE.txt</a></div>
+</div>
+<div class="license-text"><p><strong>Notice:</strong> Part of AndroidX / Jetpack.</p></div>
+</section>
+<section class="item">
+<h3>AndroidX Compose BOM / Runtime / UI / Material3 / Tooling</h3>
+<p>Jetpack Compose runtime, UI, graphics, tooling, testing, and Material 3 UI components.</p>
+<div class="meta">
+<div class="label">License</div><div>Apache License 2.0</div>
+<div class="label">Project</div><div><a href="https://developer.android.com/jetpack/compose">https://developer.android.com/jetpack/compose</a></div>
+<div class="label">License body</div><div><a href="https://github.com/androidx/androidx/blob/androidx-main/LICENSE.txt">https://github.com/androidx/androidx/blob/androidx-main/LICENSE.txt</a></div>
+</div>
+<div class="license-text"><p><strong>Notice:</strong> Includes Compose artifacts referenced by the version catalog, such as runtime, ui, ui-graphics, ui-tooling, ui-tooling-preview, ui-test-manifest, ui-test-junit4, and material3.</p></div>
+</section>
+<section class="item">
+<h3>AndroidX Lifecycle Runtime KTX / ViewModel KTX</h3>
+<p>Lifecycle and ViewModel Kotlin extensions.</p>
+<div class="meta">
+<div class="label">License</div><div>Apache License 2.0</div>
+<div class="label">Project</div><div><a href="https://developer.android.com/jetpack/androidx/releases/lifecycle">https://developer.android.com/jetpack/androidx/releases/lifecycle</a></div>
+<div class="label">License body</div><div><a href="https://github.com/androidx/androidx/blob/androidx-main/LICENSE.txt">https://github.com/androidx/androidx/blob/androidx-main/LICENSE.txt</a></div>
+</div>
+<div class="license-text"><p><strong>Notice:</strong> Part of AndroidX / Jetpack.</p></div>
+</section>
+<section class="item">
+<h3>AndroidX Navigation</h3>
+<p>Navigation Fragment KTX, Navigation UI KTX, Navigation Compose, Dynamic Features, Safe Args, and related Navigation artifacts.</p>
+<div class="meta">
+<div class="label">License</div><div>Apache License 2.0</div>
+<div class="label">Project</div><div><a href="https://developer.android.com/jetpack/androidx/releases/navigation">https://developer.android.com/jetpack/androidx/releases/navigation</a></div>
+<div class="label">License body</div><div><a href="https://github.com/androidx/androidx/blob/androidx-main/LICENSE.txt">https://github.com/androidx/androidx/blob/androidx-main/LICENSE.txt</a></div>
+</div>
+<div class="license-text"><p><strong>Notice:</strong> Part of AndroidX / Jetpack.</p></div>
+</section>
+<section class="item">
+<h3>AndroidX RecyclerView</h3>
+<p>RecyclerView UI component library.</p>
+<div class="meta">
+<div class="label">License</div><div>Apache License 2.0</div>
+<div class="label">Project</div><div><a href="https://developer.android.com/jetpack/androidx/releases/recyclerview">https://developer.android.com/jetpack/androidx/releases/recyclerview</a></div>
+<div class="label">License body</div><div><a href="https://github.com/androidx/androidx/blob/androidx-main/LICENSE.txt">https://github.com/androidx/androidx/blob/androidx-main/LICENSE.txt</a></div>
+</div>
+<div class="license-text"><p><strong>Notice:</strong> Part of AndroidX / Jetpack.</p></div>
+</section>
+<section class="item">
+<h3>AndroidX Paging Runtime</h3>
+<p>Paging library runtime.</p>
+<div class="meta">
+<div class="label">License</div><div>Apache License 2.0</div>
+<div class="label">Project</div><div><a href="https://developer.android.com/jetpack/androidx/releases/paging">https://developer.android.com/jetpack/androidx/releases/paging</a></div>
+<div class="label">License body</div><div><a href="https://github.com/androidx/androidx/blob/androidx-main/LICENSE.txt">https://github.com/androidx/androidx/blob/androidx-main/LICENSE.txt</a></div>
+</div>
+<div class="license-text"><p><strong>Notice:</strong> Part of AndroidX / Jetpack.</p></div>
+</section>
+<section class="item">
+<h3>AndroidX Multidex</h3>
+<p>Multidex support library.</p>
+<div class="meta">
+<div class="label">License</div><div>Apache License 2.0</div>
+<div class="label">Project</div><div><a href="https://developer.android.com/studio/build/multidex">https://developer.android.com/studio/build/multidex</a></div>
+<div class="label">License body</div><div><a href="https://github.com/androidx/androidx/blob/androidx-main/LICENSE.txt">https://github.com/androidx/androidx/blob/androidx-main/LICENSE.txt</a></div>
+</div>
+<div class="license-text"><p><strong>Notice:</strong> Part of AndroidX / Jetpack.</p></div>
+</section>
+<section class="item">
+<h3>AndroidX SwipeRefreshLayout</h3>
+<p>Swipe-to-refresh UI layout.</p>
+<div class="meta">
+<div class="label">License</div><div>Apache License 2.0</div>
+<div class="label">Project</div><div><a href="https://developer.android.com/jetpack/androidx/releases/swiperefreshlayout">https://developer.android.com/jetpack/androidx/releases/swiperefreshlayout</a></div>
+<div class="label">License body</div><div><a href="https://github.com/androidx/androidx/blob/androidx-main/LICENSE.txt">https://github.com/androidx/androidx/blob/androidx-main/LICENSE.txt</a></div>
+</div>
+<div class="license-text"><p><strong>Notice:</strong> Part of AndroidX / Jetpack.</p></div>
+</section>
+<section class="item">
+<h3>AndroidX CoordinatorLayout</h3>
+<p>CoordinatorLayout support library.</p>
+<div class="meta">
+<div class="label">License</div><div>Apache License 2.0</div>
+<div class="label">Project</div><div><a href="https://developer.android.com/jetpack/androidx/releases/coordinatorlayout">https://developer.android.com/jetpack/androidx/releases/coordinatorlayout</a></div>
+<div class="label">License body</div><div><a href="https://github.com/androidx/androidx/blob/androidx-main/LICENSE.txt">https://github.com/androidx/androidx/blob/androidx-main/LICENSE.txt</a></div>
+</div>
+<div class="license-text"><p><strong>Notice:</strong> Part of AndroidX / Jetpack.</p></div>
+</section>
+<section class="item">
+<h3>AndroidX Media</h3>
+<p>AndroidX media support library used for media compatibility/session APIs.</p>
+<div class="meta">
+<div class="label">License</div><div>Apache License 2.0</div>
+<div class="label">Project</div><div><a href="https://github.com/androidx/media">https://github.com/androidx/media</a></div>
+<div class="label">License body</div><div><a href="https://github.com/androidx/media/blob/release/LICENSE.txt">https://github.com/androidx/media/blob/release/LICENSE.txt</a></div>
+</div>
+<div class="license-text"><p><strong>Notice:</strong> Artifact referenced as androidx.media:media.</p></div>
+</section>
+<section class="item">
+<h3>AndroidX Test Ext JUnit / Espresso Core</h3>
+<p>Android instrumentation test libraries.</p>
+<div class="meta">
+<div class="label">License</div><div>Apache License 2.0</div>
+<div class="label">Project</div><div><a href="https://developer.android.com/training/testing">https://developer.android.com/training/testing</a></div>
+<div class="label">License body</div><div><a href="https://github.com/androidx/androidx/blob/androidx-main/LICENSE.txt">https://github.com/androidx/androidx/blob/androidx-main/LICENSE.txt</a></div>
+</div>
+<div class="license-text"><p><strong>Notice:</strong> Test-only dependencies; included here for completeness.</p></div>
+</section>
+</div>
+<h2>Java / Kotlin / Networking / Utility Components</h2>
+<div class="section-list">
+<section class="item">
+<h3>Kotlin / Kotlin Gradle Plugin</h3>
+<p>Kotlin language tooling and Gradle plugin.</p>
+<div class="meta">
+<div class="label">License</div><div>Apache License 2.0</div>
+<div class="label">Project</div><div><a href="https://github.com/JetBrains/kotlin">https://github.com/JetBrains/kotlin</a></div>
+<div class="label">License body</div><div><a href="https://github.com/JetBrains/kotlin/blob/master/license/LICENSE.txt">https://github.com/JetBrains/kotlin/blob/master/license/LICENSE.txt</a></div>
+</div>
+<div class="license-text"><p><strong>Notice:</strong> Build/runtime usage depends on the application packaging.</p></div>
+</section>
+<section class="item">
+<h3>Android Gradle Plugin</h3>
+<p>Android build system Gradle plugin.</p>
+<div class="meta">
+<div class="label">License</div><div>Apache License 2.0</div>
+<div class="label">Project</div><div><a href="https://developer.android.com/build/releases/gradle-plugin">https://developer.android.com/build/releases/gradle-plugin</a></div>
+<div class="label">License body</div><div><a href="https://android.googlesource.com/platform/tools/base/+/refs/heads/mirror-goog-studio-main/LICENSE">https://android.googlesource.com/platform/tools/base/+/refs/heads/mirror-goog-studio-main/LICENSE</a></div>
+</div>
+<div class="license-text"><p><strong>Notice:</strong> Build-time dependency; listed for completeness.</p></div>
+</section>
+<section class="item">
+<h3>Gson</h3>
+<p>Java serialization/deserialization library for JSON.</p>
+<div class="meta">
+<div class="label">License</div><div>Apache License 2.0</div>
+<div class="label">Project</div><div><a href="https://github.com/google/gson">https://github.com/google/gson</a></div>
+<div class="label">License body</div><div><a href="https://github.com/google/gson/blob/main/LICENSE">https://github.com/google/gson/blob/main/LICENSE</a></div>
+</div>
+<div class="license-text"><p><strong>Notice:</strong> Copyright 2008 Google Inc.</p></div>
+</section>
+<section class="item">
+<h3>Logger / orhanobut/logger</h3>
+<p>Simple logging utility for Android.</p>
+<div class="meta">
+<div class="label">License</div><div>Apache License 2.0</div>
+<div class="label">Project</div><div><a href="https://github.com/orhanobut/logger">https://github.com/orhanobut/logger</a></div>
+<div class="label">License body</div><div><a href="https://github.com/orhanobut/logger/blob/master/LICENSE">https://github.com/orhanobut/logger/blob/master/LICENSE</a></div>
+</div>
+<div class="license-text"><p><strong>Notice:</strong> Copyright 2018 Orhan Obut.</p></div>
+</section>
+<section class="item">
+<h3>RxJava 3</h3>
+<p>Reactive Extensions for the JVM.</p>
+<div class="meta">
+<div class="label">License</div><div>Apache License 2.0</div>
+<div class="label">Project</div><div><a href="https://github.com/ReactiveX/RxJava">https://github.com/ReactiveX/RxJava</a></div>
+<div class="label">License body</div><div><a href="https://github.com/ReactiveX/RxJava/blob/master/LICENSE">https://github.com/ReactiveX/RxJava/blob/master/LICENSE</a></div>
+</div>
+<div class="license-text"><p><strong>Notice:</strong> Copyright RxJava contributors.</p></div>
+</section>
+<section class="item">
+<h3>RxAndroid</h3>
+<p>Android bindings for RxJava.</p>
+<div class="meta">
+<div class="label">License</div><div>Apache License 2.0</div>
+<div class="label">Project</div><div><a href="https://github.com/ReactiveX/RxAndroid">https://github.com/ReactiveX/RxAndroid</a></div>
+<div class="label">License body</div><div><a href="https://github.com/ReactiveX/RxAndroid/blob/3.x/LICENSE">https://github.com/ReactiveX/RxAndroid/blob/3.x/LICENSE</a></div>
+</div>
+<div class="license-text"><p><strong>Notice:</strong> Copyright RxAndroid contributors.</p></div>
+</section>
+<section class="item">
+<h3>JSch</h3>
+<p>Java Secure Channel library used for SSH/SFTP functionality.</p>
+<div class="meta">
+<div class="label">License</div><div>BSD-style license</div>
+<div class="label">Project</div><div><a href="https://www.jcraft.com/jsch/">https://www.jcraft.com/jsch/</a></div>
+<div class="label">License body</div><div><a href="https://github.com/is/jsch/blob/master/LICENSE.txt">https://github.com/is/jsch/blob/master/LICENSE.txt</a></div>
+</div>
+<div class="license-text"><p><strong>Notice:</strong> JSch 0.1.x is distributed under a BSD-style license.</p></div>
+</section>
+<section class="item">
+<h3>Apache Commons Net</h3>
+<p>Network protocol client library, including FTP support.</p>
+<div class="meta">
+<div class="label">License</div><div>Apache License 2.0</div>
+<div class="label">Project</div><div><a href="https://commons.apache.org/net/">https://commons.apache.org/net/</a></div>
+<div class="label">License body</div><div><a href="https://github.com/apache/commons-net/blob/master/LICENSE.txt">https://github.com/apache/commons-net/blob/master/LICENSE.txt</a></div>
+</div>
+<div class="license-text"><p><strong>Notice:</strong> Copyright The Apache Software Foundation.</p></div>
+</section>
+<section class="item">
+<h3>jcifs-ng</h3>
+<p>SMB/CIFS client library.</p>
+<div class="meta">
+<div class="label">License</div><div>LGPL-2.1</div>
+<div class="label">Project</div><div><a href="https://github.com/AgNO3/jcifs-ng">https://github.com/AgNO3/jcifs-ng</a></div>
+<div class="label">License body</div><div><a href="https://github.com/AgNO3/jcifs-ng/blob/master/LICENSE">https://github.com/AgNO3/jcifs-ng/blob/master/LICENSE</a></div>
+</div>
+<div class="license-text"><p><strong>Notice:</strong> LGPL-2.1 obligations apply. For proprietary applications, preserve notices and comply with LGPL requirements.</p></div>
+</section>
+<section class="item">
+<h3>SSHJ</h3>
+<p>SSHv2 library for Java.</p>
+<div class="meta">
+<div class="label">License</div><div>Apache License 2.0</div>
+<div class="label">Project</div><div><a href="https://github.com/hierynomus/sshj">https://github.com/hierynomus/sshj</a></div>
+<div class="label">License body</div><div><a href="https://github.com/hierynomus/sshj/blob/master/LICENSE_HEADER">https://github.com/hierynomus/sshj/blob/master/LICENSE_HEADER</a></div>
+</div>
+<div class="license-text"><p><strong>Notice:</strong> Copyright SSHJ contributors.</p></div>
+</section>
+<section class="item">
+<h3>Firebase Protolite Well Known Types</h3>
+<p>Firebase protolite well-known protobuf type definitions/runtime support.</p>
+<div class="meta">
+<div class="label">License</div><div>Apache License 2.0</div>
+<div class="label">Project</div><div><a href="https://mvnrepository.com/artifact/com.google.firebase/protolite-well-known-types">https://mvnrepository.com/artifact/com.google.firebase/protolite-well-known-types</a></div>
+<div class="label">License body</div><div><a href="https://www.apache.org/licenses/LICENSE-2.0">https://www.apache.org/licenses/LICENSE-2.0</a></div>
+</div>
+<div class="license-text"><p><strong>Notice:</strong> Artifact referenced as com.google.firebase:protolite-well-known-types.</p></div>
+</section>
+<section class="item">
+<h3>JUnit 4</h3>
+<p>Unit testing framework.</p>
+<div class="meta">
+<div class="label">License</div><div>Eclipse Public License 1.0</div>
+<div class="label">Project</div><div><a href="https://github.com/junit-team/junit4">https://github.com/junit-team/junit4</a></div>
+<div class="label">License body</div><div><a href="https://github.com/junit-team/junit4/blob/main/LICENSE-junit.txt">https://github.com/junit-team/junit4/blob/main/LICENSE-junit.txt</a></div>
+</div>
+<div class="license-text"><p><strong>Notice:</strong> Test-only dependency; included here for completeness.</p></div>
+</section>
+</div>
+<h2>Android / UI Components</h2>
+<div class="section-list">
+<section class="item">
+<h3>Material Components for Android</h3>
+<p>Material Design UI components for Android.</p>
+<div class="meta">
+<div class="label">License</div><div>Apache License 2.0</div>
+<div class="label">Project</div><div><a href="https://github.com/material-components/material-components-android">https://github.com/material-components/material-components-android</a></div>
+<div class="label">License body</div><div><a href="https://github.com/material-components/material-components-android/blob/master/LICENSE">https://github.com/material-components/material-components-android/blob/master/LICENSE</a></div>
+</div>
+<div class="license-text"><p><strong>Notice:</strong> Copyright Google LLC.</p></div>
+</section>
+<section class="item">
+<h3>Speed Dial / FloatingActionButtonSpeedDial</h3>
+<p>Material Design Floating Action Button Speed Dial implementation.</p>
+<div class="meta">
+<div class="label">License</div><div>Apache License 2.0</div>
+<div class="label">Project</div><div><a href="https://github.com/leinardi/FloatingActionButtonSpeedDial">https://github.com/leinardi/FloatingActionButtonSpeedDial</a></div>
+<div class="label">License body</div><div><a href="https://github.com/leinardi/FloatingActionButtonSpeedDial/blob/release/LICENSE">https://github.com/leinardi/FloatingActionButtonSpeedDial/blob/release/LICENSE</a></div>
+</div>
+<div class="license-text"><p><strong>Notice:</strong> Copyright Roberto Leinardi.</p></div>
+</section>
+<section class="item">
+<h3>FastAdapter</h3>
+<p>RecyclerView adapter library.</p>
+<div class="meta">
+<div class="label">License</div><div>Apache License 2.0</div>
+<div class="label">Project</div><div><a href="https://github.com/mikepenz/FastAdapter">https://github.com/mikepenz/FastAdapter</a></div>
+<div class="label">License body</div><div><a href="https://github.com/mikepenz/FastAdapter/blob/develop/LICENSE">https://github.com/mikepenz/FastAdapter/blob/develop/LICENSE</a></div>
+</div>
+<div class="license-text"><p><strong>Notice:</strong> Copyright Mike Penz and contributors.</p></div>
+</section>
+<section class="item">
+<h3>MaterialDrawer</h3>
+<p>Material Design drawer library for Android.</p>
+<div class="meta">
+<div class="label">License</div><div>Apache License 2.0</div>
+<div class="label">Project</div><div><a href="https://github.com/mikepenz/MaterialDrawer">https://github.com/mikepenz/MaterialDrawer</a></div>
+<div class="label">License body</div><div><a href="https://github.com/mikepenz/MaterialDrawer/blob/develop/LICENSE">https://github.com/mikepenz/MaterialDrawer/blob/develop/LICENSE</a></div>
+</div>
+<div class="license-text"><p><strong>Notice:</strong> Copyright Mike Penz.</p></div>
+</section>
+<section class="item">
+<h3>Material Dialogs</h3>
+<p>Material Design dialog library.</p>
+<div class="meta">
+<div class="label">License</div><div>Apache License 2.0</div>
+<div class="label">Project</div><div><a href="https://github.com/afollestad/material-dialogs">https://github.com/afollestad/material-dialogs</a></div>
+<div class="label">License body</div><div><a href="https://github.com/afollestad/material-dialogs/blob/main/LICENSE.md">https://github.com/afollestad/material-dialogs/blob/main/LICENSE.md</a></div>
+</div>
+<div class="license-text"><p><strong>Notice:</strong> Copyright Aidan Follestad.</p></div>
+</section>
+
+</div>
+<h2>Standard License Text Links</h2>
+<ul>
+<li><a href="https://opensource.org/license/mit">MIT License</a></li>
+<li><a href="https://www.apache.org/licenses/LICENSE-2.0">Apache License 2.0</a></li>
+<li><a href="https://opensource.org/license/bsd-3-clause">BSD 3-Clause License</a></li>
+<li><a href="https://www.gnu.org/licenses/old-licenses/lgpl-2.1.html">GNU Lesser General Public License 2.1</a></li>
+<li><a href="https://www.eclipse.org/legal/epl-v10.html">Eclipse Public License 1.0</a></li>
+<li><a href="https://www.ffmpeg.org/legal.html">FFmpeg Legal and License Information</a></li>
+<li><a href="https://openssl-library.org/source/license/">OpenSSL License Information</a></li>
+</ul>
+
+</main>
+</body>
+</html>
