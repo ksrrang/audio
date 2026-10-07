@@ -355,7 +355,7 @@
             </div>
             <div class="summary-item">
               <strong>Remote servers</strong>
-              <span>SMB, FTP, and SFTP credentials and files communicate directly with the server specified by the user.</span>
+              <span>SMB, explicit FTPS, and SFTP credentials and files communicate directly with the server specified by the user.</span>
             </div>
             <div class="summary-item">
               <strong>Saving and sharing</strong>
@@ -366,13 +366,13 @@
 
         <div class="notice">
           <strong>Important</strong>
-          KSRRangAudio does not automatically upload user-selected media or remote-server content to servers operated by the Company. With SMB, FTP, or SFTP, data is transferred between the user's device and the server the user specifies.
+          KSRRangAudio does not automatically upload user-selected media or remote-server content to servers operated by the Company. With SMB, explicit FTPS, or SFTP, data is transferred between the user's device and the server the user specifies.
         </div>
 
         <article><h2>1. Information processed and purposes</h2><table><thead><tr><th>Information or resource</th><th>Purpose</th><th>Method</th></tr></thead><tbody>
       <tr><td>Audio and video files</td><td>Playback, speed, pitch, 10-band EQ, vocal removal, and edited-file creation</td><td>The selected file is processed on the device</td></tr>
       <tr><td>Microphone audio</td><td>Recording vocals or instruments over a backing track</td><td>Processed while the user is recording</td></tr>
-      <tr><td>SMB, FTP, or SFTP address, port, and account information</td><td>Connecting to the remote server specified by the user</td><td>May be stored on the device or used during the input session</td></tr>
+      <tr><td>SMB, FTPS, or SFTP address, port, and account information</td><td>Connecting to the remote server specified by the user</td><td>May be stored on the device or used during the input session</td></tr>
       <tr><td>Audio and video data on a remote server</td><td>Streaming playback, editing, and vocal removal</td><td>Transferred between the device and the user-specified server</td></tr>
       <tr><td>Created edits, vocal-removal results, and overdub files</td><td>Review, retention, and sharing</td><td>Stored in app-internal storage</td></tr>
       <tr><td>Device and app diagnostics</td><td>Troubleshooting, stability, and performance improvement</td><td>May be processed if diagnostic or advertising SDKs are used</td></tr>
@@ -382,7 +382,7 @@
 
         <article><h2>3. Microphone and overdubbing</h2><p>KSRRangAudio may request microphone permission to provide overdubbing. The microphone is used only while the user has explicitly started recording.</p><p>Recorded voice or instrument audio is mixed with a backing track to create an overdub result and is stored in app-internal storage. The Company does not automatically transmit this recording to its servers.</p></article>
 
-        <article><h2>4. SMB, FTP, and SFTP remote-server features</h2><p>Users may play, edit, or remove vocals from audio and video files on an SMB, FTP, or SFTP server that they manage or are authorized to access.</p><h3>Connection information that may be processed</h3><ul><li>Server address or host name</li><li>Port number</li><li>Username</li><li>Password, private key, or other authentication information</li><li>Remote path and filename</li></ul><p>Connection information is used on the user's device to provide the remote connection. The Company does not automatically collect it on Company servers. However, the operator of the selected server or a network provider may process connection logs and transfer information under that operator's policy.</p><p class="notice"><strong>FTP security warning:</strong> Standard FTP may not encrypt credentials or transferred content. For important files or credentials, use encrypted SFTP or a trusted network.</p></article>
+        <article><h2>4. SMB, FTPS, and SFTP remote-server features</h2><p>Users may play, edit, or remove vocals from audio and video files on an SMB, explicit FTPS, or SFTP server that they manage or are authorized to access.</p><h3>Connection information that may be processed</h3><ul><li>Server address or host name</li><li>Port number</li><li>Username</li><li>Password, private key, or other authentication information</li><li>Remote path and filename</li></ul><p>Connection information is used on the user's device to provide the remote connection. The Company does not automatically collect it on Company servers. However, the operator of the selected server or a network provider may process connection logs and transfer information under that operator's policy.</p><p class="notice"><strong>Explicit FTPS security notice:</strong> An FTPS connection typically starts on port 21 and is then encrypted with TLS. Verify that the server certificate is valid and trusted, and use the port configured by the server.</p></article>
 
         <article><h2>5. File storage and sharing</h2><p>The following may be stored in app-internal storage:</p><ul><li>Edited files with speed, pitch, or EQ changes</li><li>Vocal-removal results</li><li>Overdub recordings and mixed results</li></ul><p>When the user invokes sharing, Android sends the file to a third-party app selected by the user, such as KakaoTalk, email, or cloud storage. After sharing, that app's privacy policy and terms govern its processing of the file and personal information.</p></article>
 
@@ -391,7 +391,7 @@
       <tr><td>Microphone</td><td>Overdub and voice or instrument recording</td></tr>
       <tr><td>Notifications</td><td>Show background playback, audio-processing status, and playback controls</td></tr>
       <tr><td>Nearby devices/Bluetooth</td><td>Connect Bluetooth audio devices and support playback controls</td></tr>
-      <tr><td>Internet/network</td><td>SMB, FTP, and SFTP access, advertising, or online features</td></tr>
+      <tr><td>Internet/network</td><td>SMB, FTPS, and SFTP access, advertising, or online features</td></tr>
     </tbody></table><p>If an optional permission is denied, features that do not need it remain available, but features requiring it may be limited.</p></article>
 
         <article><h2>7. Advertising and third-party services</h2><p>KSRRangAudio may use advertising services such as Google AdMob to operate the service. An advertising SDK may process information such as an advertising identifier, IP address, device information, app interactions, and approximate location to deliver ads, prevent abuse, limit frequency, and measure performance.</p><p>In the European Economic Area (EEA), the United Kingdom, and other regions requiring consent, a choice screen for advertising and related data processing may be provided under applicable law and Google policies. Data processed by a third-party service is governed by that provider's privacy policy.</p><p>If advertising or a particular diagnostic service is not included in the released version, that service does not process data.</p></article>
@@ -404,7 +404,7 @@
 
         <article><h2>11. Children's personal information</h2><p>KSRRangAudio is not designed to intentionally collect children's personal information. If we learn that information requiring consent from a legal representative has been collected, we will take the measures required by applicable law.</p></article>
 
-        <article><h2>12. Security measures</h2><p>The Company applies reasonable technical and administrative measures to protect personal information and user data. Security, account management, and access permissions for an SMB, FTP, or SFTP server operated or selected by the user remain the user's responsibility.</p><ul><li>Minimizing unnecessary personal-information collection</li><li>Access control through Android's permission system</li><li>Managing results in app-specific storage</li><li>Using encrypted communication where possible</li></ul></article>
+        <article><h2>12. Security measures</h2><p>The Company applies reasonable technical and administrative measures to protect personal information and user data. Security, account management, and access permissions for an SMB, FTPS, or SFTP server operated or selected by the user remain the user's responsibility.</p><ul><li>Minimizing unnecessary personal-information collection</li><li>Access control through Android's permission system</li><li>Managing results in app-specific storage</li><li>Using encrypted communication where possible</li></ul></article>
 
         <article><h2>13. Changes to this Privacy Policy</h2><p>This policy may be revised due to changes in features, law, or service operation. Material changes will be announced through the app, website, or Google Play listing.</p><p><strong>Effective date:</strong> July 29, 2026</p></article>
 

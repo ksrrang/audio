@@ -357,7 +357,7 @@
             </div>
             <div class="summary-item">
               <strong>원격 서버 연결</strong>
-              <span>SMB·FTP·SFTP 접속정보와 파일은 이용자가 지정한 서버와 직접 통신합니다.</span>
+              <span>SMB·FTPS·SFTP 접속정보와 파일은 이용자가 지정한 서버와 직접 통신합니다.</span>
             </div>
             <div class="summary-item">
               <strong>결과물 저장·공유</strong>
@@ -369,7 +369,7 @@
         <div class="notice">
           <strong>중요 안내</strong>
           KSRRangAudio는 이용자가 선택한 미디어 파일과 원격 서버의 콘텐츠를 회사 서버에
-          자동 업로드하지 않습니다. SMB·FTP·SFTP 사용 시 데이터는 이용자의 기기와
+          자동 업로드하지 않습니다. SMB·FTPS·SFTP 사용 시 데이터는 이용자의 기기와
           이용자가 직접 지정한 서버 사이에서 전송됩니다.
         </div>
 
@@ -396,7 +396,7 @@
                 <td>이용자가 녹음을 실행한 동안 처리</td>
               </tr>
               <tr>
-                <td>SMB·FTP·SFTP 서버 주소, 포트, 계정정보</td>
+                <td>SMB·FTPS·SFTP 서버 주소, 포트, 계정정보</td>
                 <td>이용자가 지정한 원격 서버에 접속</td>
                 <td>기기에 저장되거나 입력 세션 동안 사용될 수 있음</td>
               </tr>
@@ -446,9 +446,9 @@
         </article>
 
         <article>
-          <h2>4. SMB·FTP·SFTP 원격 서버 기능</h2>
+          <h2>4. SMB·FTPS·SFTP 원격 서버 기능</h2>
           <p>
-            이용자는 본인이 관리하거나 접근 권한을 가진 SMB, FTP 또는 SFTP 서버의
+            이용자는 본인이 관리하거나 접근 권한을 가진 SMB, 명시적 FTPS 또는 SFTP 서버의
             오디오·동영상 파일을 KSRRangAudio에서 재생하고 편집하거나 보컬 제거할 수 있습니다.
           </p>
 
@@ -469,10 +469,9 @@
           </p>
 
           <div class="notice">
-            <strong>FTP 보안 주의</strong>
-            일반 FTP는 접속정보와 전송 내용이 암호화되지 않을 수 있습니다. 중요한 파일이나
-            계정정보를 사용하는 경우 암호화된 SFTP 또는 신뢰할 수 있는 네트워크 사용을
-            권장합니다.
+            <strong>명시적 FTPS 보안 안내</strong>
+            FTPS 연결은 일반적으로 21번 포트에서 시작한 뒤 TLS로 암호화됩니다. 서버 인증서가
+            유효하고 신뢰할 수 있는지 확인하고, 서버 설정과 일치하는 포트를 사용하세요.
           </div>
         </article>
 
@@ -522,7 +521,7 @@
               </tr>
               <tr>
                 <td>인터넷·네트워크</td>
-                <td>SMB·FTP·SFTP 접속, 광고 또는 온라인 기능 제공</td>
+                <td>SMB·FTPS·SFTP 접속, 광고 또는 온라인 기능 제공</td>
               </tr>
             </tbody>
           </table>
@@ -608,7 +607,7 @@
           <h2>12. 안전성 확보 조치</h2>
           <p>
             회사는 개인정보와 이용자 데이터를 보호하기 위해 합리적인 기술적·관리적 조치를
-            적용합니다. 다만 이용자가 직접 운영하거나 선택한 SMB·FTP·SFTP 서버의 보안,
+            적용합니다. 다만 이용자가 직접 운영하거나 선택한 SMB·FTPS·SFTP 서버의 보안,
             계정 관리 및 접근 권한은 이용자의 책임 영역에 해당합니다.
           </p>
           <ul>
