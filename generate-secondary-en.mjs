@@ -70,6 +70,13 @@ const supportKo = await readFile("ko/support.html", "utf8");
 const supportCurrentEn = await readFile("en/support.html", "utf8");
 let supportEn = replaceArticles(supportKo, supportCurrentEn);
 supportEn = replaceAll(supportEn, [
+  ["https://play.google.com/store/apps/details?id=com.ksrrang.audio&amp;hl=ko", "https://play.google.com/store/apps/details?id=com.ksrrang.audio&amp;hl=en"],
+  ["https://drive.google.com/file/d/1IAglyBbttKroukIYugp9JlakyCTPaXY9/view?usp=drive_link", "https://drive.google.com/file/d/1KKGCYFRF5aqtB3nrSQVaheqrioqNZg01/view?usp=drive_link"],
+  ["https://www.youtube.com/@KSRRangAudio", "https://www.youtube.com/@KSRRang"],
+  ["Google Play에서 설치", "Get it on Google Play"],
+  ["한국어 사용자 매뉴얼", "English user manual"],
+  ["한국어 기능 설명 동영상", "English video tutorials"],
+  ["앱 설치 및 사용 안내", "App installation and guides"],
   ['<html lang="ko">', '<html lang="en">'],
   ['<link rel="canonical" href="https://audio.ksrrang.com/ko/support.html" />', '<link rel="canonical" href="https://audio.ksrrang.com/en/support.html" />'],
   ["KSRRang(케이에스알랑)의 KSRRangAudio 고객지원 페이지입니다. 재생, 편집, 보컬 제거, 원격 연결, 파일 저장과 공유 관련 도움말을 제공합니다.", "KSRRangAudio support from KSRRang for playback, editing, vocal removal, remote connections, file storage, and sharing."],

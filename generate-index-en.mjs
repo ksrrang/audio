@@ -1,6 +1,13 @@
 import { readFile, writeFile } from "node:fs/promises";
 
 const translations = new Map([
+  ["https://play.google.com/store/apps/details?id=com.ksrrang.audio&amp;hl=ko", "https://play.google.com/store/apps/details?id=com.ksrrang.audio&amp;hl=en"],
+  ["https://drive.google.com/file/d/1IAglyBbttKroukIYugp9JlakyCTPaXY9/view?usp=drive_link", "https://drive.google.com/file/d/1KKGCYFRF5aqtB3nrSQVaheqrioqNZg01/view?usp=drive_link"],
+  ["https://www.youtube.com/@KSRRangAudio", "https://www.youtube.com/@KSRRang"],
+  ["Google Play에서 설치", "Get it on Google Play"],
+  ["한국어 사용자 매뉴얼", "English user manual"],
+  ["한국어 기능 설명 동영상", "English video tutorials"],
+  ["앱 설치 및 사용 안내", "App installation and guides"],
   ["<html lang=\"ko\">", "<html lang=\"en\">"],
   ['<link rel="canonical" href="https://audio.ksrrang.com/ko/index.html" />', '<link rel="canonical" href="https://audio.ksrrang.com/en/index.html" />'],
   ["KSRRang(케이에스알랑)의 KSRRangAudio는 오디오 및 동영상 파일의 오디오 재생·편집, 속도·피치·10밴드 EQ 조절, 보컬 제거, 오버더빙과 원격 파일 처리를 지원하는 안드로이드 앱입니다.", "KSRRangAudio by KSRRang is an Android app for playing and editing audio and audio tracks from video files, with speed, pitch, a 10-band EQ, vocal removal, overdubbing, and remote-file processing."],
